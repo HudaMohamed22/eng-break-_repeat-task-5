@@ -1,0 +1,70 @@
+<?php
+$con=mysql_connect("localhost","root","hanaa12300");
+
+mysql_select_db("signup");
+
+$q=mysql_query("select * from user");
+include('session.php');
+?>
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>SecPage</title>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="sec.css">
+        <meta name="viewport" content="initial-scale=1.0">
+		
+		<style>
+			ul {
+				  list-style-type: none;
+				  margin: 0;
+				  padding: 0;
+				  overflow: hidden;
+				}
+
+				li {
+				  float: left;
+				}
+
+				li a {
+				  display: block;
+				  color: #9a0a0a;
+				  text-align: center;
+				  padding: 16px;
+				  text-decoration: none;
+				  
+				}
+				
+
+				li a:hover {
+				  background-color: #b5b5b5;
+				}
+				h1{
+				    position:relative;
+					top:50px;
+					text-align:center;
+					color:#7d1010;
+				}
+				.list{
+				  position:relative;
+				  top:130px;
+				  left:450px;
+				}
+		</style>
+       
+    </head>
+    <body style ="background-color: darkgrey;">
+        <div class="home">
+                
+          <h1>you’re signed in</h1>
+			<div class="list">
+				<ul>
+					<h2><li><a href="Update.php">update account</a></li></h2>
+					<h2><li><a href="LogOut.php">logout</a></li></h2>
+					<h2><li><a href="Delete.html">delete account</a></li></h2>
+				</ul>
+			</div>
+		  
+        </div>
+         
+    </body>

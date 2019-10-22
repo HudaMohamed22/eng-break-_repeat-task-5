@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>FORM</title>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="task.css">
+        <meta name="viewport" content="initial-scale=1.0">
+       
+    </head>
+    <body style ="background-color: darkgrey;">
+        <div class="home">
+                
+            <div class=form>
+                      <div class=img>
+                          <h2>contact us</h2>
+                          <p>feel free to drop us a line below !</p>
+                   
+                        </div>   
+                <form class="contact" action="SignUp.php">
+                    <div class="inputform">
+                             <label for="name">Full Name:</label>
+                             <div class="pp">   <input class="input" type="text" name="FullName"  placeholder="Enter Full Name" data-rule="minlen:4" data-msg="Please enter at least 4 chars" required>  </div>      
+                     </div>
+                     <div class="inputform" >
+                            <label for="name">Email:</label>
+                            <div class="pp">  <input class="input" type="text" name="email"  placeholder="Enter Email Address" data-rule="email" data-msg="Please enter a valid email" required></div>
+                           
+                        </div>
+                        
+                        <div class="inputform" >
+                                <label for="name">Age:</label>
+                                <div class="pp">  <input class="input"  type="number" name="age" placeholder="Enter Your Age" required></div>
+                                
+                        </div>
+    
+                        <div class="inputform" >
+                            <label for="name">Password:</label>
+                        <div class="pp"> <input class="input" type="password" name="password" placeholder="Your password"  data-rule="minlen:4" data-msg="Please enter at least 4 chars of password" required></div>  
+                        </div>
+                            <div>
+                                <button class="button">
+                                    SignUp
+                                </button>
+                            </div>
+							 
+							 <a href = "login.html" target="_blank"> I am already member</a> 
+                        </div>
+		               
+
+
+
+                </form>
+			
+            </div>
+         </div>
+         
+    </body>
